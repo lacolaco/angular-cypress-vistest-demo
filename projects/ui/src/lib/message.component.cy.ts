@@ -4,11 +4,11 @@ describe('MessageComponent', () => {
   it('mounts', () => {
     cy.mount(MessageComponent, {
       componentProperties: {
-        message: 'Hello World',
+        message: 'Hello Angular',
       },
     });
     cy.matchImage({
-        maxDiffThreshold: 0.001,
+      maxDiffThreshold: 0.001,
     });
   });
 });
