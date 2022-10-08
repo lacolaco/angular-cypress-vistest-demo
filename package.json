@@ -1,12 +1,14 @@
 {
-  "name": "angular-playwright",
+  "name": "angular-vistest",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "cy:open": "cypress open",
+    "cy:run-ct": "cypress run --component"
   },
   "private": true,
   "dependencies": {
@@ -26,13 +28,16 @@
     "@angular-devkit/build-angular": "^14.2.5",
     "@angular/cli": "~14.2.5",
     "@angular/compiler-cli": "^14.2.0",
+    "@frsource/cypress-plugin-visual-regression-diff": "^2.3.1",
     "@types/jasmine": "~4.0.0",
+    "cypress": "^10.9.0",
     "jasmine-core": "~4.3.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "ng-packagr": "^14.2.0",
     "typescript": "~4.7.2"
   }
 }
