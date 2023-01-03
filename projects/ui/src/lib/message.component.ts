@@ -9,7 +9,7 @@ import { Component, Input } from '@angular/core';
   styles: [
     `
       p {
-        color: red;
+        color: green;
       }
     `,
   ],
