@@ -13,7 +13,7 @@ export default defineConfig({
     },
   },
   env: {
-    pluginVisualRegressionUpdateImages: !!process.env['UPDATE_SNAPSHOT'],
+    pluginVisualRegressionUpdateImages: !!process.env['UPDATE_SNAPSHOTS'],
     pluginVisualRegressionImagesPath: 'cypress/snapshots',
   },
 });
