@@ -22,3 +22,5 @@ jobs:
           commit-message: "test: update image snapshots"
           title: "test: update image snapshots"
           branch: update-snapshots
+          labels: |
+            vistest:update-snapshots
