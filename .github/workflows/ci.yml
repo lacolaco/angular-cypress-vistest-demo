@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled]
+    branches:
+      - main
+
+jobs:
+  visual-regression:
+    runs-on: ubuntu-latest
+    if: ${{ !contains(github.event.pull_request.labels.*.name, 'vistest:accepted') }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: yarn install
+      - run: yarn cy:run-ct
+      - uses: actions/upload-artifact@v3
+        if: failure()
+        with:
+          name: cypress-snapshots
+          path: cypress/snapshots

@@ -1,0 +1,24 @@
+name: update snapshot
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: yarn install
+      - run: yarn cy:run-ct
+        env:
+          UPDATE_SNAPSHOTS: true
+      - uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: "test: update image snapshots"
+          title: "test: update image snapshots"
+          branch: update-snapshots
