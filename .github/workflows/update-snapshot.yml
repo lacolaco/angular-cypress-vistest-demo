@@ -17,7 +17,7 @@ jobs:
       - run: yarn cy:run-ct
         env:
           UPDATE_SNAPSHOTS: true
-      - uses: peter-evans/create-pull-request@v4
+      - uses: peter-evans/create-pull-request@v5
         with:
           commit-message: "test: update image snapshots"
           title: "test: update image snapshots"
