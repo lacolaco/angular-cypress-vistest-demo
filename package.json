@@ -29,7 +29,7 @@
     "@angular/cli": "~15.0.4",
     "@angular/compiler-cli": "^15.0.4",
     "@frsource/cypress-plugin-visual-regression-diff": "^3.2.8",
-    "@types/jasmine": "~4.3.0",
+    "@types/jasmine": "~4.6.0",
     "cypress": "^12.2.0",
     "jasmine-core": "~4.3.0",
     "karma": "~6.4.0",
