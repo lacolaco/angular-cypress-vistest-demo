@@ -1793,10 +1793,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/jasmine@~4.3.0":
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-4.3.2.tgz#27045b95e1249e67ef02c7966e12003fb25df18b"
-  integrity sha512-lKkWBcbxEZX/7nxPqEtv/OjPLaBa2j0o+hmv5Yn83b/+11C1kfBAkgvmrb13WDkmizUJ3B+jYrWh4M0YRtrzEQ==
+"@types/jasmine@~4.6.0":
+  version "4.6.6"
+  resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-4.6.6.tgz#b5b5af42ef09291ca2b7eb275266bf639d1745b9"
+  integrity sha512-A91MzB6bi8fA5gEK7FUQ+ukJ2rUFdOcWCYi5rwDKG3wLU1eJk7P13RxXf4bAXPgsIeBJCo8G5WFhF7l/6qBRSQ==
 
 "@types/json-schema@*", "@types/json-schema@^7.0.8", "@types/json-schema@^7.0.9":
   version "7.0.12"
